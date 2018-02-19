@@ -12,9 +12,11 @@
  * @package WP_Bootstrap_Starter
  */
 
+$lg_col_width = is_active_sidebar( 'sidebar-1' ) ? "col-lg-9" : "col-lg-12";
+
 get_header(); ?>
 
-	<section id="primary" class="content-area col-sm-12 col-md-12 col-lg-8">
+	<section id="primary" class="content-area col-sm-12 col-md-12 <?= $lg_col_width ?>">
 		<main id="main" class="site-main" role="main">
 
 		<?php
